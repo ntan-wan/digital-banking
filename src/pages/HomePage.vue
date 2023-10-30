@@ -6,7 +6,7 @@ const mq = useMq();
 </script>
 
 <template>
-  <div class="container px-3">
+  <div class="container px-2">
     <section>
       <h3 class="text-center">Digital Banking</h3>
       <p class="mt-3 color-subtitle text-center text-xl">
