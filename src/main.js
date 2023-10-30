@@ -1,6 +1,7 @@
 import App from './App.vue';
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
+import { Vue3Mq } from 'vue3-mq';
 import PrimeVue from 'primevue/config';
 import router from '@/router';
 import '@/styles/main.scss';
@@ -28,6 +29,7 @@ const app = createApp(App);
 
 app.use(pinia);
 app.use(router);
+app.use(Vue3Mq);
 app.use(PrimeVue, { ripple: true });
 
 app.component('Button', Button);

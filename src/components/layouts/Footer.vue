@@ -2,7 +2,7 @@
   <footer>
     <div>
       <LogoIcon />
-      <div class="flex justify-content-between">
+      <div class="flex flex-column md:flex-row justify-content-between">
         <div class="mt-4">
           <h6 class="h8 font-bold">Compliance</h6>
           <ul class="mt-3 list flex flex-column gap-2">

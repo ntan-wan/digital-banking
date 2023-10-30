@@ -4,7 +4,7 @@ import vue from '@vitejs/plugin-vue';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/digital-banking',
+  base: process.env.NODE_ENV == 'development' ? '/' : '/digital-banking',
   server: {
     port: 3000,
   },
