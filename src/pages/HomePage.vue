@@ -29,7 +29,8 @@ const mq = useMq();
                 and track transactions with MEYZER360.
               </p>
             </div>
-            <Divider layout="vertical" style="margin: 0 1.5rem" />
+            <Divider v-if="mq.xs || mq.sm" style="margin: 1.5rem 0" />
+            <Divider v-else layout="vertical" style="margin: 0 1.5rem" />
             <div>
               <h6 class="h7">Global Treasury</h6>
               <p class="mt-3 text-xs">
@@ -38,7 +39,8 @@ const mq = useMq();
                 currency.
               </p>
             </div>
-            <Divider layout="vertical" style="margin: 0 1.5rem" />
+            <Divider v-if="mq.xs || mq.sm" style="margin: 1.5rem 0" />
+            <Divider v-else layout="vertical" style="margin: 0 1.5rem" />
             <div>
               <h6 class="h7">Zero Hidden Fees</h6>
               <p class="mt-3 text-xs">
@@ -47,7 +49,9 @@ const mq = useMq();
                 global account for payments and collections.
               </p>
             </div>
-            <Divider layout="vertical" style="margin: 0 1.5rem" />
+            <!-- <Divider layout="vertical" style="margin: 0 1.5rem" /> -->
+            <Divider v-if="mq.xs || mq.sm" style="margin: 1.5rem 0" />
+            <Divider v-else layout="vertical" style="margin: 0 1.5rem" />
             <div>
               <h6 class="h7">Local Support</h6>
               <p class="mt-3 text-xs">
